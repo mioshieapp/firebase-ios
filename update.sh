@@ -66,7 +66,7 @@ package() {
   echo "Packaging $name..."
 
   find "$name" -name "*.xcframework" -type d | while read -r xc; do
-    find "$xc" -maxdepth 1 -mindepth 1 -type d ! -name "*ios*" -exec rm -rf {} +
+    find "$xc" -maxdepth 1 -mindepth 1 -type d ! -name "*ios*" ! -name "*macos*" -exec rm -rf {} +
   done
 
   (cd "$name" && zip -r "$zip_path" .)
