@@ -95,7 +95,6 @@ package "FirebaseRemoteConfig"
 package "FirebaseAppCheck"
 package "FirebaseAuth"
 package "FirebaseFirestore"
-package "GoogleSignIn"
 package "FirebaseFunctions"
 package "FirebaseCrashlytics"
 
